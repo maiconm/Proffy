@@ -1,10 +1,13 @@
 import React from 'react';
+import PageHeader from '../../components/PageHeader';
 
 import './styles.css'
 
 function TeacherForm() {
   return (
-    <div>TeacherForm</div>
+    <div id="page-teacher-form" className="container">
+      <PageHeader title="Que incrivel que voce quer dar aulas."></PageHeader>
+    </div>
   );
 }
 
