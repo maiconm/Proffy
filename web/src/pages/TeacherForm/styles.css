@@ -45,7 +45,6 @@
   color: var(--color-primary);
   cursor: pointer;
   transition: color 0.2s;
-  /* outline: 0; */
 }
 
 #page-teacher-form main fieldset legend button:hover {
