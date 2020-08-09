@@ -2,25 +2,33 @@
 GET / HTTP/1.1
 Host: localhost:3333
 
-### Tutorial - Query params
-GET /tutorial/users?search=Maicon HTTP/1.1
-Host: localhost:3333
-
-### Tutorial - Route params - PUT
-PUT /tutorial/users/1 HTTP/1.1
-Host: localhost:3333
-
-### Tutorial - Route params - DELETE
-DELETE /tutorial/users/1 HTTP/1.1
-Host: localhost:3333
-
-### Tutorial - Body
-POST /tutorial/users/maicon HTTP/1.1
+### Create class
+POST /classes HTTP/1.1
 Host: localhost:3333
 Content-Type: application/json
 
 {
-  "username": "Maicon",
-  "description": "developer"
+  "name": "Maicon Andraski",
+  "avatar": "https://avatars1.githubusercontent.com/u/36269699?s=460&v=4",
+  "whatsapp": "41999999999",
+  "bio": "teste",
+  "subject": "matematica",
+  "cost": 80,
+  "schedule": [
+    {
+      "week_day": 1,
+      "from": "8:00",
+      "to": "12:00"
+    },
+    {
+      "week_day": 3,
+      "from": "10:00",
+      "to": "18:00"
+    },
+    {
+      "week_day": 4,
+      "from": "8:00",
+      "to": "12:00"
+    }
+  ]
 }
-
