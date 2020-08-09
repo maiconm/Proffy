@@ -9,8 +9,10 @@ function TeacherItem() {
     <article className="teacher-item">
       <header>
         <img src="https://avatars1.githubusercontent.com/u/36269699?s=460&v=4" alt="Maicon"/>
-        <strong>Maicon</strong>
-        <span>Quimica</span>
+        <div>
+          <strong>Maicon</strong>
+          <span>Quimica</span>
+        </div>
       </header>
       
       <p>
