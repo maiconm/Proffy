@@ -8,7 +8,7 @@ interface ScheduleItem {
   to: string
 }
 
-export default class ClassController {
+export default class ClassesController {
   async index(request: Request, response: Response) {
     const filters = request.query
     const subject = <string>filters.subject
