@@ -1,6 +1,6 @@
 import React from 'react'
 import { View } from 'react-native'
-import styles from '../Landing/styles'
+import styles from './styles'
 
 function Favorites() {
   return (
