@@ -7,6 +7,7 @@ import styles from './styles'
 import PageHeader from '../../components/PageHeader'
 import TeacherItem, { Teacher } from '../../components/TeacherItem'
 import api from '../../services/api'
+import { useFocusEffect } from '@react-navigation/native'
 
 function TeacherList() {
   const [favorites, setFavorites] = useState<number[]>([])
@@ -45,6 +46,10 @@ function TeacherList() {
 
     setTeachers(response.data);
   }
+
+  useFocusEffect(() => {
+    loadFavorites()
+  })
 
   return (
     <View style={styles.container}>
